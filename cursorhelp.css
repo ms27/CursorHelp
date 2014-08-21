@@ -1,0 +1,276 @@
+/*
+ * SteerHelper v1.0
+ * https://plus.google.com/114595254514911414836
+ *
+ * Copyright 2011, Magomedov Said.
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+*/
+#cursorTitle{
+display:table;
+font-size:inherit;
+opacity:0;
+background-color:#dadada;
+border-radius:5px;
+color:rgba(0,0,0,0.7);
+padding:5px 10px;
+position:fixed;
+top:-9999;
+left:-9999;
+z-index:999999;
+box-shadow:0 0 3px #555;;
+border-width:2px 0 2px 0;
+border-style:solid;
+border-color:rgba(0,0,0,.2);
+}
+#cursorTitle.visible{
+opacity:.98;
+}
+#cursorTitle.TitleCorner .TitleCorner,
+#cursorTitle .TitleCorner.true{
+display:inline-block;
+width:5px;
+background-color:#dadada;
+height:5px;
+border-width:3px 3px 0 0;
+border-style:solid;
+border-color:#aaa #aaa transparent transparent;
+position:absolute;
+top:-6px;
+transform:rotate(-45deg);
+}
+#cursorTitle .TitleCorner.true.top{
+position:absolute;
+bottom:-6px;
+top:initial;
+transform:rotate(135deg);
+}
+
+/* SteerHelper цвет текста -------------------- */
+#cursorTitle.c-green-l{color:#00F114;}
+#cursorTitle.c-green{color:#00B40F;}
+#cursorTitle.c-green-d{color:#060;}
+#cursorTitle.c-red-l{color:#F50000;}
+#cursorTitle.c-red{color:#CA0000;}
+#cursorTitle.c-red-d{color:#8B0000;}
+#cursorTitle.c-blue-l{color:#0A00FF;}
+#cursorTitle.c-blue{color:#0700B6;}
+#cursorTitle.c-blue-d{color:#060183;}
+#cursorTitle.c-yellow-l{color:#FFF857;}
+#cursorTitle.c-yellow{color:#DDD400;}
+#cursorTitle.c-yellow-d{color:#D8AD00;}
+#cursorTitle.c-bright-blue-l{color:#00EAFF;}
+#cursorTitle.c-bright-blue{color:#00BDCE;}
+#cursorTitle.c-bright-blue-d{color:#008B97;}
+#cursorTitle.c-purple-l{color:#FF00FF;}
+#cursorTitle.c-purple{color:#D100D1;}
+#cursorTitle.c-purple-d{color:#9C009C;}
+#cursorTitle.c-pink-l{color:#FF549F;}
+#cursorTitle.c-pink{color:#FF0D77;}
+#cursorTitle.c-pink-d{color:#D8005F;}
+#cursorTitle.c-orange-l{color:#FFBA3D;}
+#cursorTitle.c-orange{color:#FFA606;}
+#cursorTitle.c-orange-d{color:#E29100;}
+#cursorTitle.c-white{color:#fff;}
+#cursorTitle.c-black{color:#000;}
+#cursorTitle.c-gray-l{color:#C9C9C9;}
+#cursorTitle.c-gray{color:#aaa;}
+#cursorTitle.c-gray-d{color:#777777;}
+#cursorTitle.c-light{color:rgba(255,255,255,0.5);}
+#cursorTitle.c-dark{color:rgba(0,0,0,0.3);}
+/* SteerHelper цвет фона --------------------- */
+#cursorTitle.bgc-green-l{background-color:#00F114;}
+#cursorTitle.bgc-green{background-color:#00B40F;}
+#cursorTitle.bgc-green-d{background-color:#060;}
+#cursorTitle.bgc-red-l{background-color:#F50000;}
+#cursorTitle.bgc-red{background-color:#CA0000;}
+#cursorTitle.bgc-red-d{background-color:#8B0000;}
+#cursorTitle.bgc-blue-l{background-color:#0A00FF;}
+#cursorTitle.bgc-blue{background-color:#0700B6;}
+#cursorTitle.bgc-blue-d{background-color:#060183;}
+#cursorTitle.bgc-yellow-l{background-color:#FFF857;}
+#cursorTitle.bgc-yellow{background-color:#DDD400;}
+#cursorTitle.bgc-yellow-d{background-color:#D8AD00;}
+#cursorTitle.bgc-bright-blue-l{background-color:#00EAFF;}
+#cursorTitle.bgc-bright-blue{background-color:#00BDCE;}
+#cursorTitle.bgc-bright-blue-d{background-color:#008B97;}
+#cursorTitle.bgc-purple-l{background-color:#FF00FF;}
+#cursorTitle.bgc-purple{background-color:#D100D1;}
+#cursorTitle.bgc-purple-d{background-color:#9C009C;}
+#cursorTitle.bgc-pink-l{background-color:#FF549F;}
+#cursorTitle.bgc-pink{background-color:#FF0D77;}
+#cursorTitle.bgc-pink-d{background-color:#D8005F;}
+#cursorTitle.bgc-orange-l{background-color:#FFBA3D;}
+#cursorTitle.bgc-orange{background-color:#FFA606;}
+#cursorTitle.bgc-orange-d{background-color:#E29100;}
+#cursorTitle.bgc-white{background-color:#fff;}
+#cursorTitle.bgc-black{background-color:#000;}
+#cursorTitle.bgc-gray-l{background-color:#C9C9C9;}
+#cursorTitle.bgc-gray{background-color:#aaa;}
+#cursorTitle.bgc-gray-d{background-color:#777777;}
+/* SteerHelper цвет границы --------------------- */
+#cursorTitle.bc-green-l{border-color:#00F114;}
+#cursorTitle.bc-green{border-color:#00B40F;}
+#cursorTitle.bc-green-d{border-color:#060;}
+#cursorTitle.bc-red-l{border-color:#F50000;}
+#cursorTitle.bc-red{border-color:#CA0000;}
+#cursorTitle.bc-red-d{border-color:#8B0000;}
+#cursorTitle.bc-blue-l{border-color:#0A00FF;}
+#cursorTitle.bc-blue{border-color:#0700B6;}
+#cursorTitle.bc-blue-d{border-color:#060183;}
+#cursorTitle.bc-yellow-l{border-color:#FFF857;}
+#cursorTitle.bc-yellow{border-color:#DDD400;}
+#cursorTitle.bc-yellow-d{border-color:#D8AD00;}
+#cursorTitle.bc-bright-blue-l{border-color:#00EAFF;}
+#cursorTitle.bc-bright-blue{border-color:#00BDCE;}
+#cursorTitle.bc-bright-blue-d{border-color:#008B97;}
+#cursorTitle.bc-purple-l{border-color:#FF00FF;}
+#cursorTitle.bc-purple{border-color:#D100D1;}
+#cursorTitle.bc-purple-d{border-color:#9C009C;}
+#cursorTitle.bc-pink-l{border-color:#FF549F;}
+#cursorTitle.bc-pink{border-color:#FF0D77;}
+#cursorTitle.bc-pink-d{border-color:#D8005F;}
+#cursorTitle.bc-orange-l{border-color:#FFBA3D;}
+#cursorTitle.bc-orange{border-color:#FFA606;}
+#cursorTitle.bc-orange-d{border-color:#E29100;}
+#cursorTitle.bc-white{border-color:#fff;}
+#cursorTitle.bc-black{border-color:#000;}
+#cursorTitle.bc-gray-l{border-color:#C9C9C9;}
+#cursorTitle.bc-gray{border-color:#aaa;}
+#cursorTitle.bc-gray-d{border-color:#777777;}
+/* SteerHelper тень -------------- */
+#cursorTitle.bs-t{box-shadow:0 -2px 5px #555;}
+#cursorTitle.bs-tr{box-shadow:2px -2px 5px #555;}
+#cursorTitle.bs-r{box-shadow:2px 0 5px #555;}
+#cursorTitle.bs-rb{box-shadow:2px 2px 5px #555;}
+#cursorTitle.bs-b{box-shadow:0 2px 5px #555;}
+#cursorTitle.bs-bl{box-shadow:-2px 2px 5px #555;}
+#cursorTitle.bs-l{box-shadow:-2px 0 5px #555;}
+#cursorTitle.bs-lt{box-shadow:-2px -2px 5px #555}
+#cursorTitle.bs{box-shadow:0 0 0 #555;}
+#cursorTitle.bs-5{box-shadow:0 0 5px #555;}
+#cursorTitle.bs-8{box-shadow:0 0 8px #555;}
+#cursorTitle.bs-10{box-shadow:0 0 10px #555;}
+#cursorTitle.bs-13{box-shadow:0 0 13px #555;}
+#cursorTitle.bs-15{box-shadow:0 0 15px #555;}
+/* SteerHelper тень у текста -------------- */
+#cursorTitle.ts-t{text-shadow:0 -1px 1px #555;}
+#cursorTitle.ts-tr{text-shadow:1px -1px 1px #555;}
+#cursorTitle.ts-r{text-shadow:1px 0 1px #555;}
+#cursorTitle.ts-rb{text-shadow:1px 1px 1px #555;}
+#cursorTitle.ts-b{text-shadow:0 1px 1px #555;}
+#cursorTitle.ts-bl{text-shadow:-1px 1px 1px #555;}
+#cursorTitle.ts-l{text-shadow:-1px 0 1px #555;}
+#cursorTitle.ts-lt{text-shadow:-1px -1px 1px #555}
+#cursorTitle.ts{text-shadow:0 0 3px #555;}
+/* SteerHelper закругление краёв -------------- */
+#cursorTitle.br-0{border-radius:0px;}
+#cursorTitle.br-3{border-radius:3px;}
+#cursorTitle.br-5{border-radius:5px;}
+#cursorTitle.br-8{border-radius:8px;}
+#cursorTitle.br-10{border-radius:10px;}
+#cursorTitle.br-15{border-radius:15px;}
+#cursorTitle.br-20{border-radius:20px;}
+#cursorTitle.br-25{border-radius:25px;}
+#cursorTitle.br-50pct{border-radius:50%;}
+/* SteerHelper размер шрифта ------------------ */
+#cursorTitle.fs-8{font-size:8px;}
+#cursorTitle.fs-10{font-size:10px;}
+#cursorTitle.fs-13{font-size:13px;}
+#cursorTitle.fs-15{font-size:15px;}
+#cursorTitle.fs-18{font-size:18px;}
+#cursorTitle.fs-20{font-size:20px;}
+#cursorTitle.fs-23{font-size:23px;}
+#cursorTitle.fs-25{font-size:25px;}
+#cursorTitle.fs-30{font-size:30px;}
+/* SteerHelper прзрачность -------------------- */
+#cursorTitle.opacity-09{opacity:0.9;}
+#cursorTitle.opacity-08{opacity:0.8;}
+#cursorTitle.opacity-07{opacity:0.7;}
+#cursorTitle.opacity-06{opacity:0.6;}
+#cursorTitle.opacity-05{opacity:0.5;}
+#cursorTitle.opacity-04{opacity:0.4;}
+#cursorTitle.opacity-03{opacity:0.3;}
+#cursorTitle.opacity-02{opacity:0.2;}
+#cursorTitle.opacity-01{opacity:0.1;}
+/* SteerHelper прзрачность -------------------- */
+#cursorTitle.blink{
+-webkit-animation:blink .6s ease-in-out;
+-moz-animation:blink .6s ease-in-out;
+-o-animation:blink .6s ease-in-out;
+-ms-animation:blink .6s ease-in-out;
+animation:blink .6s ease-in-out;
+}
+#cursorTitle.blink-1{
+-webkit-animation:blink .4s ease-in-out infinite alternate;
+-moz-animation:blink .4s ease-in-out infinite alternate;
+-o-animation:blink .4s ease-in-out infinite alternate;
+-ms-animation:blink .4s ease-in-out infinite alternate;
+animation:blink .4s ease-in-out infinite alternate;
+}
+#cursorTitle.blink-2{
+-webkit-animation:blink .6s ease-in-out infinite alternate;
+-moz-animation:blink .6s ease-in-out infinite alternate;
+-o-animation:blink .6s ease-in-out infinite alternate;
+-ms-animation:blink .6s ease-in-out infinite alternate;
+animation:blink .6s ease-in-out infinite alternate;
+}
+#cursorTitle.blink-3{
+-webkit-animation:blink .8s ease-in-out infinite alternate;
+-moz-animation:blink .8s ease-in-out infinite alternate;
+-o-animation:blink .8s ease-in-out infinite alternate;
+-ms-animation:blink .8s ease-in-out infinite alternate;
+animation:blink .8s ease-in-out infinite alternate;
+}
+#cursorTitle.blink-4{
+-webkit-animation:blink 1s ease-in-out infinite alternate;
+-moz-animation:blink 1s ease-in-out infinite alternate;
+-o-animation:blink 1s ease-in-out infinite alternate;
+-ms-animation:blink 1s ease-in-out infinite alternate;
+animation:blink 1s ease-in-out infinite alternate;
+}
+#cursorTitle.blink-5{
+-webkit-animation:blink 1.3s ease-in-out infinite alternate;
+-moz-animation:blink 1.3s ease-in-out infinite alternate;
+-o-animation:blink 1.3s ease-in-out infinite alternate;
+-ms-animation:blink 1.3s ease-in-out infinite alternate;
+animation:blink 1.3s ease-in-out infinite alternate;
+}
+#cursorTitle.blink-6{
+-webkit-animation:blink 1.6s ease-in-out infinite alternate;
+-moz-animation:blink 1.6s ease-in-out infinite alternate;
+-o-animation:blink 1.6s ease-in-out infinite alternate;
+-ms-animation:blink 1.6s ease-in-out infinite alternate;
+animation:blink 1.6s ease-in-out infinite alternate;
+}
+#cursorTitle.blink-7{
+-webkit-animation:blink 2s ease-in-out infinite alternate;
+-moz-animation:blink 2s ease-in-out infinite alternate;
+-o-animation:blink 2s ease-in-out infinite alternate;
+-ms-animation:blink 2s ease-in-out infinite alternate;
+animation:blink 2s ease-in-out infinite alternate;
+}
+#cursorTitle.blink-8{
+-webkit-animation:blink 2.6s ease-in-out infinite alternate;
+-moz-animation:blink 2.6s ease-in-out infinite alternate;
+-o-animation:blink 2.6s ease-in-out infinite alternate;
+-ms-animation:blink 2.6s ease-in-out infinite alternate;
+animation:blink 2.6s ease-in-out infinite alternate;
+}
+
+@-moz-keyframes blink {   
+0% {opacity:0;}
+30% {opacity:1;}
+}
+@-webkit-keyframes blink {
+0% {opacity:0;}
+30% {opacity:1;}
+}
+@-ms-keyframes blink {
+0% {opacity:0;}
+30% {opacity:1;}
+}
+@keyframes blink {
+0% {opacity:0;}
+30% {opacity:1;}
+}
