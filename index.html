@@ -1,1 +1,280 @@
-<h1>Steer Helper</h1>
+<!-- Автор: Магомедов Саид
+CursorHelp - красивый title для сайта
+-->
+<!DOCTYPE html>
+ <html>
+   <head lang="ru">
+     <title>CursorHelp - jquery title</title>
+     <meta name="description" content="CursorHelp - необычная замена, обычного атрибута 'title'. Красивый появляющийся title у тегов при помощи JQuery, CSS и HTML. Beautiful HTML title Attribute on Jquery and Css.">
+     <meta name="keywords" content="SteerHelper, jquery, beautiful tag`s title, красивый title, title on jquery and css, скрипт, script, plugin, html">
+     <meta name="author" content="магомедов саид, magomedov said, ms27">
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="js/js.js"></script>
+     <script type="text/javascript" src="js/cursorhelp.js"></script>
+     <link rel="stylesheet" href="css/cursorhelp.css">
+     <link rel="stylesheet" href="css/css.css">
+     <link rel="stylesheet" href="../css/font-awesome.min.css">
+     <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed|Open+Sans+Condensed:700,300italic,300&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+   </head>
+   <body id="body">
+      <header>
+	<div id="toTop">
+	  <a href="#body"><i class="fa fa-home"></i></a>
+	</div>
+	<div id="toGitHub">
+	  <a href="https://github.com/ms27/CursorHelp/tree/master" target="_blanck" class="cursorTitle" data-title="GitHub" data-ch-config="bgc-bright-blue c-white bs-bl"><i class="fa fa-github"></i></a>
+	</div>
+	<nav>
+	  <ul>
+	    <li class="cursorTitle" data-title="<span class='CHdisplay'>Примеры / </span>Examples" data-ch-config="bgc-red c-white opacity-09 bs-bl"><a href="#examples"><span>Примеры</span><i class="fa fa-eye"></i></a></li>
+	    <li class="cursorTitle" data-title="<span class='CHdisplay'>Как использовать / </span>How to use" data-ch-config="bgc-blue c-white opacity-09 bs-b"><a href="#use"><span>Как использовать</span><i class="fa fa-gears"></i></a></li>
+	    <li class="cursorTitle" data-title="<span class='CHdisplay'>Лицензия / </span>License" data-ch-config="bgc-green c-white opacity-09 bs-rb"><a href="#license"><span>Лицнезия</span><i class="fa fa-book"></i></a></li>
+	  </ul>
+	</nav>
+      </header>
+      <div id="wrap">
+	<div class="header">
+	    <h1>CursorHelp<sup>.js</sup></h1>
+	      <article class="main">
+		<p>CursorHelp - это универсальный <span class="cursorTitle" data-title="это я, привет!<br>It`s me, hi!" data-ch-config="ta-c bc-yellow c-yellow-l bgc-red-d opacity-09 bs-b">помощник</span> для посетителей вашего сайта.
+		Его преимуществом является то, что он может вписаться в дизайн любого проекта, так как Вам предоставляется 
+		возможность управлять внешним видом отдельно взятой подсказки, определённой группы, а также дизайном всех подсказок.</p>
+	      </article>
+	      <div class="footer">
+		<div>
+		 <div>
+		  <a href="https://github.com/ms27/CursorHelp/archive/master.zip" target="_blanck" class="download cursorTitle" data-title="Download" data-ch-config="fs-23 opacity-09 bgc-yellow bs-b">Скачать <i class="fa fa-cloud-download"></i></a>
+		 </div>
+		</div>
+	      </div>
+	      <div class="info"><p><span class="cursorTitle" data-title="Version 1.0">Версия: 1.0</span> <i class="fa fa-dot-circle-o margin"></i> <span class="cursorTitle" data-title="GitHub Project"><a href="https://github.com/ms27/CursorHelp/tree/gh-pages">Проект на GitHub</a></span> <i class="fa fa-dot-circle-o margin"></i> <span class="cursorTitle"f data-title="Created by Magomedov Said">Автор: Магомедов Саид</span></p></div>
+	</div>
+	<section class="content">
+	  <article id="examples">
+	    <h2 class="cursorTitle" data-title="Examles" data-ch-config="ch-h2">Примеры<span class="hCBox"><span class="hC"></span></span></h2>
+	     <div class="wrap">
+	      <div id="exampleBox" class="main">
+		<p>Если вы не будете применять дополнительных стилей, то подсказка будет иметь стандартный вид:<br><span class="cursorTitle exampleBlocks" data-title="Now you see me. It`s my standard look">наведи курсор на меня!</span></p>
+		<p>Но если вам нужно изменить дизайн, то этого можно легко добиться.</p>
+		<p>К примеру, можно изменить фон каждой подсказки. Наведите курсор на следующие блоки и посмотрите на изменения.</p>
+		<span class="cursorTitle exampleBlocks" data-title="Example 1.1" data-ch-config="c-white bgc-green">Пример 1.1</span>
+		<span class="cursorTitle exampleBlocks" data-title="Example 1.2" data-ch-config="c-white bgc-red">Пример 1.2</span>
+		<span class="cursorTitle exampleBlocks" data-title="Example 1.3" data-ch-config="bgc-yellow">Пример 1.3</span>
+		<span class="cursorTitle exampleBlocks" data-title="Example 1.4" data-ch-config="c-white bgc-orange">Пример 1.4</span>
+		<span class="cursorTitle exampleBlocks" data-title="Example 1.5" data-ch-config="c-white bgc-blue">Пример 1.5</span>
+		<span class="cursorTitle exampleBlocks" data-title="Example 1.6" data-ch-config="c-white bgc-bright-blue">Пример 1.6</span>
+		<span class="cursorTitle exampleBlocks" data-title="Example 1.7" data-ch-config="c-white bgc-pink">Пример 1.7</span>
+		<span class="cursorTitle exampleBlocks" data-title="Example 1.8" data-ch-config="c-white bgc-purple">Пример 1.8</span>
+		<p>Вы можете добавить тень блоку.</p>
+		<span class="cursorTitle exampleBlocks" data-title="Shadow <i class='fa fa-long-arrow-up'></i>" data-ch-config="bs-t">Тень <i class="fa fa-long-arrow-up"></i></span>
+		<span class="cursorTitle exampleBlocks" data-title="Shadow <i class='fa fa-long-arrow-up rotate-45'></i>" data-ch-config="bs-tr">Тень <i class="fa fa-long-arrow-up rotate-45"></i></span>
+		<span class="cursorTitle exampleBlocks" data-title="Shadow <i class='fa fa-long-arrow-right'></i>" data-ch-config="bs-r">Тень <i class="fa fa-long-arrow-right"></i></span>
+		<span class="cursorTitle exampleBlocks" data-title="Shadow <i class='fa fa-long-arrow-right rotate-45'></i>" data-ch-config="bs-rb">Тень <i class="fa fa-long-arrow-right rotate-45"></i></span>
+		<span class="cursorTitle exampleBlocks" data-title="Shadow <i class='fa fa-long-arrow-down'></i>" data-ch-config="bs-b">Тень <i class="fa fa-long-arrow-down"></i></span>
+		<span class="cursorTitle exampleBlocks" data-title="Shadow <i class='fa fa-long-arrow-down rotate-45'></i>" data-ch-config="bs-bl">Тень <i class="fa fa-long-arrow-down rotate-45"></i></span>
+		<span class="cursorTitle exampleBlocks" data-title="Shadow <i class='fa fa-long-arrow-left'></i>" data-ch-config="bs-l">Тень <i class="fa fa-long-arrow-left"></i></span>
+		<span class="cursorTitle exampleBlocks" data-title="Shadow <i class='fa fa-long-arrow-left rotate-45'></i>" data-ch-config="bs-lt">Тень <i class="fa fa-long-arrow-left rotate-45"></i></span>
+		<span class="cursorTitle exampleBlocks" data-title="0x Shadow" data-ch-config="bs">0X Тень</span>
+		<span class="cursorTitle exampleBlocks" data-title="1x Shadow" data-ch-config="bs-3">1X Тень</span>
+		<span class="cursorTitle exampleBlocks" data-title="2x Shadow" data-ch-config="bs-5">2X Тень</span>
+		<span class="cursorTitle exampleBlocks" data-title="3x Shadow" data-ch-config="bs-8">3X Тень</span>
+		<span class="cursorTitle exampleBlocks" data-title="4x Shadow" data-ch-config="bs-10">4X Тень</span>
+		<span class="cursorTitle exampleBlocks" data-title="5x Shadow" data-ch-config="bs-13">5X Тень</span>
+		<span class="cursorTitle exampleBlocks" data-title="6x Shadow" data-ch-config="bs-15">6X Тень</span>
+		<p>Нужно изменить цвет текста, не проблема.</p>
+		<span class="cursorTitle exampleBlocks" data-title="Green" data-ch-config="c-green-l bgc-white">Пример 2.1</span>
+		<span class="cursorTitle exampleBlocks" data-title="Red" data-ch-config="c-red-l bgc-white">Пример 2.2</span>
+		<span class="cursorTitle exampleBlocks" data-title="Pink" data-ch-config="c-pink-l bgc-white">Пример 2.3</span>
+		<span class="cursorTitle exampleBlocks" data-title="Purple" data-ch-config="c-purple-d bgc-white">Пример 2.4</span>
+		<span class="cursorTitle exampleBlocks" data-title="Blue" data-ch-config="c-blue-l bgc-white">Пример 2.5</span>
+		<span class="cursorTitle exampleBlocks" data-title="Bright-Blue" data-ch-config="c-bright-blue-l bgc-gray-d">Пример 2.6</span>
+		<span class="cursorTitle exampleBlocks" data-title="Yellow" data-ch-config="c-yellow-l bgc-gray-d">Пример 2.7</span>
+		<span class="cursorTitle exampleBlocks" data-title="Orange" data-ch-config="c-orange-l bgc-gray-d">Пример 2.8</span>
+		<span class="cursorTitle exampleBlocks" data-title="Gray" data-ch-config="c-gray bgc-gray-d">Пример 2.9</span>
+		<span class="cursorTitle exampleBlocks" data-title="White" data-ch-config="c-white bgc-gray-d">Пример 2.10</span>
+		<span class="cursorTitle exampleBlocks" data-title="Black" data-ch-config="c-black">Пример 2.11</span>
+		<p>Можно добавить подсказкам прозрачности.</p>
+		<span class="cursorTitle exampleBlocks" data-title="opacity:0.9" data-ch-config="c-white bgc-green opacity-09">Прозрачность 90%</span>
+		<span class="cursorTitle exampleBlocks" data-title="opacity:0.8" data-ch-config="c-white bgc-red opacity-08">Прозрачность 80%</span>
+		<span class="cursorTitle exampleBlocks" data-title="opacity:0.7" data-ch-config="bgc-yellow opacity-07">Прозрачность 70%</span>
+		<span class="cursorTitle exampleBlocks" data-title="opacity:0.6" data-ch-config="c-white bgc-orange opacity-06">Прозрачность 60%</span>
+		<span class="cursorTitle exampleBlocks" data-title="opacity:0.5" data-ch-config="c-white bgc-blue opacity-05">Прозрачность 50%</span>
+		<span class="cursorTitle exampleBlocks" data-title="opacity:0.4" data-ch-config="c-white bgc-bright-blue opacity-04">Прозрачность 40%</span>
+		<span class="cursorTitle exampleBlocks" data-title="opacity:0.3" data-ch-config="c-white bgc-pink opacity-03">Прозрачность 30%</span>
+		<span class="cursorTitle exampleBlocks" data-title="opacity:0.2" data-ch-config="c-white bgc-purple opacity-02">Прозрачность 20%</span>
+		<span class="cursorTitle exampleBlocks" data-title="opacity:0.1" data-ch-config="c-white bgc-purple opacity-01">Прозрачность 10%</span>
+		<p>Если размер шрифта должен отличаться от общего его значения, то есть возможность повлиять и на это.</p>
+		<span class="cursorTitle exampleBlocks" data-title="font-size: 8px" data-ch-config="c-white bgc-green fs-8">Шрифт 8px</span>
+		<span class="cursorTitle exampleBlocks" data-title="font-size: 10px" data-ch-config="c-white bgc-red fs-10">Шрифт 10px</span>
+		<span class="cursorTitle exampleBlocks" data-title="font-size: 13px" data-ch-config="bgc-yellow fs-13">Шрифт 13px</span>
+		<span class="cursorTitle exampleBlocks" data-title="font-size: 15px" data-ch-config="c-white bgc-orange fs-15">Шрифт 15px</span>
+		<span class="cursorTitle exampleBlocks" data-title="font-size: 18px" data-ch-config="c-white bgc-blue fs-18">Шрифт 18px</span>
+		<span class="cursorTitle exampleBlocks" data-title="font-size: 20px" data-ch-config="c-white bgc-bright-blue fs-20">Шрифт 20px</span>
+		<span class="cursorTitle exampleBlocks" data-title="font-size: 23px" data-ch-config="c-white bgc-pink fs-23">Шрифт 23px</span>
+		<span class="cursorTitle exampleBlocks" data-title="font-size: 25px" data-ch-config="c-white bgc-green fs-25">Шрифт 25px</span>
+		<span class="cursorTitle exampleBlocks" data-title="font-size: 30px" data-ch-config="c-white bgc-red fs-30">Шрифт 30px</span>
+		<p>Ко всему прочему, можно изменять степень закругления границ.</p>
+		<span class="cursorTitle exampleBlocks" data-title="border-radius: 0px" data-ch-config="c-white bgc-pink br-0">Закругление 0px</span>
+		<span class="cursorTitle exampleBlocks" data-title="border-radius: 3px" data-ch-config="c-white bgc-green br-3">Закругление 3px</span>
+		<span class="cursorTitle exampleBlocks" data-title="border-radius: 5px" data-ch-config="c-white bgc-red br-5">Закругление 5px</span>
+		<span class="cursorTitle exampleBlocks" data-title="border-radius: 8px" data-ch-config="bgc-yellow br-8">Закругление 8px</span>
+		<span class="cursorTitle exampleBlocks" data-title="border-radius: 10px" data-ch-config="c-white bgc-orange br-10">Закругление 10px</span>
+		<span class="cursorTitle exampleBlocks" data-title="border-radius: 15px" data-ch-config="c-white bgc-blue br-15">Закругление 15px</span>
+		<span class="cursorTitle exampleBlocks" data-title="border-radius: 20px" data-ch-config="c-white bgc-bright-blue br-20">Закругление 20px</span>
+		<span class="cursorTitle exampleBlocks" data-title="border-radius: 25px" data-ch-config="c-white bgc-pink br-25">Закругление 25px</span>
+		<span class="cursorTitle exampleBlocks" data-title="border-radius: 50%" data-ch-config="c-white bgc-green br-50pct">Закругление 50%</span>
+		<p>Тень можно задать не только блоку подсказки, но и тексту, который он содержит.</p>
+		<span class="cursorTitle exampleBlocks" data-title="text-shadow <i class='fa fa-long-arrow-up'></i>" data-ch-config="ts-t">Тень у текста <i class="fa fa-long-arrow-up"></i></span>
+		<span class="cursorTitle exampleBlocks" data-title="text-shadow <i class='fa fa-long-arrow-up rotate-45'></i>" data-ch-config="ts-tr">Тень у текста <i class="fa fa-long-arrow-up rotate-45"></i></span>
+		<span class="cursorTitle exampleBlocks" data-title="text-shadow <i class='fa fa-long-arrow-right'></i>" data-ch-config="ts-r">Тень у текста <i class="fa fa-long-arrow-right"></i></span>
+		<span class="cursorTitle exampleBlocks" data-title="text-shadow <i class='fa fa-long-arrow-right rotate-45'></i>" data-ch-config="ts-rb">Тень у текста <i class="fa fa-long-arrow-right rotate-45"></i></span>
+		<span class="cursorTitle exampleBlocks" data-title="text-shadow <i class='fa fa-long-arrow-down'></i>" data-ch-config="ts-b">Тень у текста <i class="fa fa-long-arrow-down"></i></span>
+		<span class="cursorTitle exampleBlocks" data-title="text-shadow <i class='fa fa-long-arrow-down rotate-45'></i>" data-ch-config="ts-bl">Тень у текста <i class="fa fa-long-arrow-down rotate-45"></i></span>
+		<span class="cursorTitle exampleBlocks" data-title="text-shadow <i class='fa fa-long-arrow-left'></i>" data-ch-config="ts-l">Тень у текста <i class="fa fa-long-arrow-left"></i></span>
+		<span class="cursorTitle exampleBlocks" data-title="text-shadow <i class='fa fa-long-arrow-left rotate-45'></i>" data-ch-config="ts-lt">Тень у текста <i class="fa fa-long-arrow-left rotate-45"></i></span>
+	      </div>
+	     </div>
+	  </article>
+	  <article id="use">
+	    <h2 class="cursorTitle" data-title="How to use" data-ch-config="ch-h2">Как использовать<span class="hCBox"><span class="hC"></span></span></h2>
+	     <div class="wrap">
+	      <div class="main" id="useBox">
+		<h3>Для того, чтобы подключить этот плагин, вам нужно:</h3>
+		<ol>
+		  <li>скачать файлы 'cursorhelp.js' и 'cursorhelp.css'</li>
+		  <li>загрузить их к себе на сервер</li>
+		  <li>подключить их в <code>&lt;head&gt;</code>-е каждой страницы</li>
+		  <li>прописать следующий код перед закрывающимся тегом body (<code>&lt;/body&gt;</code>):
+		   <p class="code"><code>
+			&emsp;&lt;div id="cursorTitle"&gt;<br>
+				&ensp;&emsp;&lt;div class="TitleContent">&lt;/div&gt;<br>
+				&ensp;&emsp;&lt;div class="TitleCorner true"&gt;&lt;/div&gt;<br>
+			&emsp;&lt;/div&gt;
+		   </code></p>
+		  </li>
+		</ol>
+		<div id="useInfo">
+		  <h3>Для того, чтобы использовать скрипт, нужно:</h3>
+		<ol>
+		  <li>добавить класс <code>cursorTitle</code> блокам, которые нуждаются в подсказочном окошке.</li>
+		   <h4>Пример:</h4>
+		   <p class="code">
+		  ...<br>
+		  <code>
+		    &lt;p class="<span class="cursorTitle" data-title="Если есть такой класс, то есть подсказка.">cursorTitle</span>"&gt;блок с подсказкой 1&lt;/p&gt;<br>
+		    &lt;p&gt;блок без подсказки&lt;/p&gt;<br>
+		    &lt;div class="<span class="cursorTitle" data-title="Если есть такой класс, то есть подсказка.">cursorTitle</span>"&gt;блок c подсказкой 2&lt;/div&gt;
+		  </code><br>
+		  ...
+		  <h4>Результат:</h4>
+		   <code class="exampleC">
+		    <p class="cursorTitle">блок с подсказкой</p>
+		    <p>блок без подсказки</p>
+		    <div class="cursorTitle">блок c подсказкой 2</div>
+		   </code>
+		   </p>
+		  <li>Добавте атрибут <code>data-title</code> c содержанием подсказки.</li>
+		   <h4>Пример:</h4>
+		   <p class="code">
+		  ...<br>
+		  <code>
+		    &lt;p class="cursorTitle"data-title="<span class="cursorTitle" data-title="Это будет содержимым подсказки">я - подсказка CursorHelp</span>"&gt;блок с подсказкой 1&lt;/p&gt;<br>
+		    &lt;p&gt;блок без подсказки&lt;/p&gt;<br>
+		    &lt;div class="cursorTitle" <span class="cursorTitle" data-title="указали класс, не забудте про атрибут data">data-title</span>="я - могу содержать &lt;strong&gt;HTML&lt/strong&gt; код,&lt;br&gt;проверь и поверь..."&gt;блок c подсказкой 2&lt;/div&gt;
+		  </code><br>
+		  ...
+		  <h4>Результат:</h4>
+		   <code class="exampleC">
+		    <p class="cursorTitle" data-title="я - подсказка CursorHelp">блок с подсказкой</p>
+		    <p>блок без подсказки</p>
+		    <div class="cursorTitle" data-title="я - могу содержать <strong>HTML</strong> код,<br>проверь и поверь...">блок c подсказкой 2</div>
+		   </code>
+		   </p>
+		  <li>Если вы хотите изменить стандартный вид CursorTitle, то добавить атрибут <code>data-ch-config</code>. Содержание этого
+		  атрибута - это классы. Подключив файл 'cursorhelp.css' к своему сайту, даёт вам возможность пользоваться готовыми решениями,
+		  которые вы могли видеть в разделе "примеры". Как это работает? Дайте значение <span><code class="cursorTitle" data-title="расшифровка: <strong>b</strong>ack<strong>g</strong>round-<strong>c</strong>olor:<strong>green</strong>;">bgc-green</code></span> атрибуту <code>data-ch-config</code> и фон подсказки станет <span class="cursorTitle" data-ch-config="bgc-green" data-title="цвет фона стал зелёным">зелёным</span>. Добавте
+ 		   атрибуту, через пробел значение, ещё одно значение <span><code class="cursorTitle" data-title="расшифровка: <strong>f</strong>ont-<strong>s</strong>ize:<strong>25</strong>px">fs-25</code></span>, через пробел значение, и размер шрифта подсказки станет равен <span class="cursorTitle" data-ch-config="bgc-green fs-25" data-title="размер шрифта - 25px">25px</span>.
+		   Дополнительно добавив <span><code class="cursorTitle" data-title="расшифровка: <strong>c</strong>olor:<strong>white</strong>">c-white</code></span>, получим <span class="cursorTitle" data-ch-config="bgc-green fs-25 c-white" data-title="текст имеет белый цвет">белый цвет у текста</span>. Добавим тень блоку и тексту дописав <span class="cursorTitle" data-title="расшифровка: <strong>b</strong>ox-<strong>s</strong>hadow: 0 2px 5px #555 (тень смещена вниз *<strong>b</strong>ottom)"><code>bs-b</code></span>
+		   и через пробел <span class="cursorTitle" data-title="расшифровак: по тому же принципу, что и у 'bs-b'"><code>ts-b</code></span>. А теперь посмотрим на результат: наведи курсор на <span class="cursorTitle" data-title="так я могу измениться" data-ch-config="bgc-green fs-25 c-white bs-b ts-b">меня</span>.
+		   Окончательным штрихом станут прозрачность и закруглённые уголки. Прозарчность - <span class="cursorTitle" data-title="расшифровка: и так понятно..."><code>opacity-08</code></span>, а закруглённые уголки - <span class="cursorTitle" data-title="<strong>b</strong>order-<strong>r</strong>adius:<strong>20px</strong>"><code>br-20px</code></span>.</li>
+		  <p>В итоге можно получить <i class="fa fa-arrow-right"></i> <span class="cursorTitle" data-title="как тебе результат?!." data-ch-config="bgc-green fs-25 c-white bs-b ts-b opacity-08 br-20">меня</span></p>
+		  <p>Таблицу всех значений с расшифровкой можно найти <a href="#"><span>здесь</span></a>.</p>
+		  <li>Вы можете использовать свои классы. Для этого нужно атрибуту 'data-title' дать значение вашего класса, а уже в своём файле со стилями или в файле 'cursorhelp.css' дать этому class-у свои значения.</li>
+		  <h4>Пример:</h4>
+		  <h5>Код HTML</h5>
+		  <p>
+		  ...<br>
+		  <code>
+		    &lt;p class="cursorTitle" data-title="текст подсказки" data-ch-config="<span>myClass</span>"&gt;тег с подсказкой&lt;/p&gt;
+		  </code>
+		  <br>...
+		  </p>
+		  <h5>Стили CSS</h5>
+		  <p>
+		  ...<br>
+		  <code>
+		    .myClass{<br>
+		      &ensp;&emsp;box-shadow:2px 4px 3px 2px #eb1;<br>
+		      &ensp;&emsp;color:#eb1;<br>
+		      &ensp;&emsp;border-widht:2px 5px;<br>
+		      &ensp;&emsp;opacity:0.85;<br>
+		      &ensp;&emsp;font-size:16px;<br>
+		      &ensp;&emsp;...<br>
+		    }
+		  </code>
+		  <br>...
+		  </p>
+		</ol>
+			
+		  </p>
+		</div>
+		<!-- <p>Если Вы хотите убрать треугольник у всех подсказок рядом с курсором, то достаточно стереть класс <code>true</code> у блока с классом 
+		  <code>TitleCorner true</code>. В случае, если вы убрали класс <code>true</code>, то у вас появляется возможность добавлять треугольник 
+		  индивидуально тем блокам, каким захотите. Для этого нужно дописать в атрибут <code>data-ch-config</code> значение <code>TitleCorner</code>. Пример:
+		</p>
+		<p class="code">
+		  ...<br>
+		  <code>
+		    &lt;p class="cursorTitle" data-title="текст" <span class="cursorTitle" data-title="У этой подсказки будет треугольник рядом с курсором" data-ch-config="bgc-green c-white">data-ch-config="TitleCorner"</span>&gt;блок с подсказкой 1&lt;/p&gt;<br>
+		    &lt;p class="cursorTitle" data-title="текст" <span class="cursorTitle" data-title="А у этой не будет треугольника рядом с курсором" data-ch-config="bgc-red c-white">data-ch-config=""</span>&gt;блок с подсказкой 2&lt;/p&gt;
+		  </code><br>
+		  ...<br>
+		  <code>
+			&lt;div id="cursorTitle"&gt;<br>
+				&ensp;&emsp;&lt;div class="TitleContent">&lt;/div&gt;<br>
+				&ensp;&emsp;&lt;div <span class="cursorTitle" data-title="отсутствует класс 'true'" data-ch-config="bgc-yellow">class="TitleCorner"</span>&gt;&lt;/div&gt;<br>
+			&lt;/div&gt;
+		  </code><br>
+		  ...<br>
+		</p>
+		-->
+	      </div>
+	     </div>
+	  </article>
+	  <article id="license">
+	    <h2 class="cursorTitle" data-title="License" data-ch-config="ch-h2">Лицензия<span class="hCBox"><span class="hC"></span></span></h2>
+	     <div class="wrap">
+	      <div class="main">
+		<h4>Данный скрипт распространяется по <a href="http://www.opensource.org/licenses/mit-license.php" target="_blanck">лицензии MIT ( X11 License )</a></h4>
+		<p>Текст лицензии гласит, что вы имеете право безвозмездно использовать этот продукт без ограничений, включая неограниченное право на использование, копирование, изменение, добавление, публикацию, распространение, сублицензирование и/или продажу копий продукта, также как и лицам, которым предоставляется данный продукт, при соблюдении следующих условий:</p>
+		<h5>Указанное выше уведомление об авторском праве и данные условия должны быть включены во все копии или значимые части данного Программного Обеспечения.</h5>
+		<p>Чтобы более подробно ознакомится с лицензией, нажмите <span class="cursorTitle" data-title="ссылка на Википедию"><a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D1%8F_MIT" target="_black">сюда</a></span> или <span class="cursorTitle" data-title="ссылка на сайт http://opensource.org/"><a href="http://opensource.org/licenses/mit-license.php" target="_black">сюда</a></span></p>
+	      </div>
+	     </div>
+	  </article>
+	</section>
+      </div>
+      <footer>
+<div>
+<p><a href="https://github.com/ms27/CursorHelp/archive/master.zip" target="_blanck">CursorHelp v1.0 (21.9.14)</a><span class="hCBox"><span class="hC"></span></span></p>
+<p class="cursorTitle"f data-title="Created by Magomedov Said">Автор: Магомедов Саид<span class="hCBox"><span class="hC"></span></span></p>
+<p class="cursorTitle" data-title="GitHub Project"><a href="https://github.com/ms27/CursorHelp/tree/gh-pages">Проект на GitHub</a><span class="hCBox"><span class="hC"></span></span></p>
+</div>
+      </footer>
+
+	<div id="cursorTitle" class="" style="">
+		<div class="TitleContent"></div>
+		<div class="TitleCorner true" style=""></div>
+	</div>
+   </body>
+ </html>
