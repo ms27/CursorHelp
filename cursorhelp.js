@@ -2,7 +2,7 @@
  * CursorHelp v1.0 (v.21.9.14)
  * hhttp://ms27.github.io/CursorHelp
  *
- * Copyright 2011, Magomedov Said.
+ * Copyright 2014, Magomedov Said.
  * Free to use under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
 */
