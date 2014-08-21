@@ -2,6 +2,9 @@ SteerHelper
 ===========
 
 <h6>-------------------------------------------------------------------------------</h6>
+<h2>Demo</h2>
+<h3>[Demo page / Демо страница](http://ms27.github.io/CursorHelp/)</h3>
+<h6>-------------------------------------------------------------------------------</h6>
 <h2>Description / Описание</h2>
 <h3>(En)</h3>
   Beautiful title on Jquery, Css and Html. This title is always visible on screen side, even if tag is located at the edge of the browser window. It is a beautiful replacement of the usual html title. It is also possible to format the appearance of each tooltip. (Google translator)
