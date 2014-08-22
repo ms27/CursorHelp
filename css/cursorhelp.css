@@ -11,6 +11,8 @@ display:table;
 font-size:inherit;
 opacity:0;
 background-color:#dadada;
+-webkit-border-radius:5px;
+-moz-border-radius:5px;
 border-radius:5px;
 color:rgba(0,0,0,0.7);
 padding:5px 10px;
@@ -37,12 +39,20 @@ border-style:solid;
 border-color:#aaa #aaa transparent transparent;
 position:absolute;
 top:-6px;
+-moz-transform:rotate(-45deg);
+-ms-transform:rotate(-45deg);
+-webkit-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
 transform:rotate(-45deg);
 }
 #cursorTitle .TitleCorner.true.top{
 position:absolute;
 bottom:-6px;
 top:initial;
+-moz-transform:rotate(135deg);
+-ms-transform:rotate(135deg);
+-webkit-transform:rotate(135deg);
+-o-transform:rotate(135deg);
 transform:rotate(135deg);
 }
 
@@ -164,15 +174,15 @@ transform:rotate(135deg);
 #cursorTitle.ts-lt{text-shadow:-1px -1px 1px #555}
 #cursorTitle.ts{text-shadow:0 0 3px #555;}
 /* SteerHelper закругление краёв -------------- */
-#cursorTitle.br-0{border-radius:0px;}
-#cursorTitle.br-3{border-radius:3px;}
-#cursorTitle.br-5{border-radius:5px;}
-#cursorTitle.br-8{border-radius:8px;}
-#cursorTitle.br-10{border-radius:10px;}
-#cursorTitle.br-15{border-radius:15px;}
-#cursorTitle.br-20{border-radius:20px;}
-#cursorTitle.br-25{border-radius:25px;}
-#cursorTitle.br-50pct{border-radius:50%;}
+#cursorTitle.br-0{-webkit-border-radius:0; -o-border-radius:0; -moz-border-radius:0;border-radius:0px;}
+#cursorTitle.br-3{-webkit-border-radius:3px; -o-border-radius:3px; -moz-border-radius:3px;border-radius:3px;}
+#cursorTitle.br-5{-webkit-border-radius:5px; -o-border-radius:5px; -moz-border-radius:5px;border-radius:5px;}
+#cursorTitle.br-8{-webkit-border-radius:8px; -o-border-radius:8px; -moz-border-radius:8px;border-radius:8px;}
+#cursorTitle.br-10{-webkit-border-radius:10px; -o-border-radius:10px; -moz-border-radius:10px;border-radius:10px;}
+#cursorTitle.br-15{-webkit-border-radius:15px; -o-border-radius:15px; -moz-border-radius:15px;border-radius:15px;}
+#cursorTitle.br-20{-webkit-border-radius:20px; -o-border-radius:20px; -moz-border-radius:20px;border-radius:20px;}
+#cursorTitle.br-25{-webkit-border-radius:25px; -o-border-radius:25px; -moz-border-radius:25px;border-radius:25px;}
+#cursorTitle.br-50pct{-webkit-border-radius:50%; -o-border-radius:50%; -moz-border-radius:50%;border-radius:50%;}
 /* SteerHelper размер шрифта ------------------ */
 #cursorTitle.fs-8{font-size:8px;}
 #cursorTitle.fs-10{font-size:10px;}
@@ -184,15 +194,41 @@ transform:rotate(135deg);
 #cursorTitle.fs-25{font-size:25px;}
 #cursorTitle.fs-30{font-size:30px;}
 /* SteerHelper прзрачность -------------------- */
-#cursorTitle.opacity-09{opacity:0.9;}
-#cursorTitle.opacity-08{opacity:0.8;}
-#cursorTitle.opacity-07{opacity:0.7;}
-#cursorTitle.opacity-06{opacity:0.6;}
-#cursorTitle.opacity-05{opacity:0.5;}
-#cursorTitle.opacity-04{opacity:0.4;}
-#cursorTitle.opacity-03{opacity:0.3;}
-#cursorTitle.opacity-02{opacity:0.2;}
-#cursorTitle.opacity-01{opacity:0.1;}
+#cursorTitle.opacity-09{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+-moz-opacity: 0.9;-khtml-opacity: 0.9;
+opacity:0.9;}
+#cursorTitle.opacity-08{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+-moz-opacity: 0.8;-khtml-opacity: 0.8;
+opacity:0.8;}
+#cursorTitle.opacity-07{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+-moz-opacity: 0.7;-khtml-opacity: 0.7;
+opacity:0.7;}
+#cursorTitle.opacity-06{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+-moz-opacity: 0.6;-khtml-opacity: 0.6;
+opacity:0.6;}
+#cursorTitle.opacity-05{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+-moz-opacity: 0.5;-khtml-opacity: 0.5;
+opacity:0.5;}
+#cursorTitle.opacity-04{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+-moz-opacity: 0.4;-khtml-opacity: 0.4;
+opacity:0.4;}
+#cursorTitle.opacity-03{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+-moz-opacity: 0.3;-khtml-opacity: 0.3;
+opacity:0.3;}
+#cursorTitle.opacity-02{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+-moz-opacity: 0.2;-khtml-opacity: 0.2;
+opacity:0.2;}
+#cursorTitle.opacity-01{
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=10);
+-moz-opacity: 0.1;-khtml-opacity: 0.1;opacity:0.1;}
 /* SteerHelper прзрачность -------------------- */
 #cursorTitle.blink{
 -webkit-animation:blink .6s ease-in-out;
