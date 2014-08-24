@@ -34,12 +34,10 @@ CursorHelp
 <ul>
 <li>
 если Вы скачали версию 1.0, то вставте следующий код перед закрывающимся тегом &lt;/body&gt; (где именно - не важно, главное, чтобы где-нибудь внизу и на всех страницах):<br>
-<code>
-<p>&lt;div id="cursorTitle"&gt;</p>
-<p>&lt;div class="TitleContent"&gt;&lt;/div&gt;</p>
-<p>&lt;div class="TitleCorner true"&gt;&lt;/div&gt;</p>
-<p>&lt;/div&gt;</p>
-</code>
+<code>&lt;div id="cursorTitle"&gt;</code><br>
+<code>&lt;div class="TitleContent"&gt;&lt;/div&gt;</code><br>
+<code>&lt;div class="TitleCorner true"&gt;&lt;/div&gt;</code><br>
+<code>&lt;/div&gt;</code>
 </li>
 <li>Если у вас версия 1.1 или выше, то делать этого не надо, достаточно подключить скрипт к страницам.</li>
 </ul>
