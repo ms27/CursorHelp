@@ -1,5 +1,5 @@
 /*
- * CursorHelp v1.0 (21.9.14)
+ * CursorHelp v1.0 (21.8.14)
  * http://ms27.github.io/CursorHelp/
  *
  * Copyright 2014, Magomedov Said.
