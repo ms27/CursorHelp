@@ -1,3 +1,8 @@
+/*
+ * Copyright 2014, Magomedov Said.
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+*/
 $(document).ready(function(){
  var headerH=$('header').height()+5;
  $(window).scroll(function(){
