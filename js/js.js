@@ -1,12 +1,12 @@
 $(document).ready(function(){
+ $(window).scroll(function(){
+  var wTop=$(this).scrollTop();
   $('.content article').each(function(){
    var thisA=$(this),
     articlePos=thisA.offset.top();
-      $(window).scroll(function(){
-        var wTop=$(this).scrollTop();
         if(wTop>articlePos){
           thisA.addClass('active');
         }
       });
-  });
+ });
 });
