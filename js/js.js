@@ -1,5 +1,5 @@
 $(document).ready(function(){
- var headerH=$('header').height();
+ var headerH=$('header').height()+5;
  $(window).scroll(function(){
   var wTop=$(this).scrollTop(),
   wHeight=$(this).height();
@@ -24,6 +24,6 @@ $(document).ready(function(){
  $('[data-active]').click(function(){
   var aScroll=$(this).attr('data-active'),
   aScrollPos=$('#'+aScroll).offset().top;
-  $('html, body').animate({scrollTop: aScrollPos-headerH-10}, 500);
+  $('html, body').animate({scrollTop: aScrollPos-headerH}, 500);
  });
 });
