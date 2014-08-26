@@ -6,7 +6,7 @@ $(document).ready(function(){
    var aPos=$(this).offset().top,
    aHeight=$(this).height(),
    aLink=$(this).attr('id');
-        if(wTop+$('header').height()+wHeight/2>aPos && wTop+$('header').height()+wHeight/2<aPos+aHeight){
+        if(wTop+$('header').height()+wHeight/2>aPos && wTop+$('header').height()<aPos+aHeight){
          $('[data-active="'+aLink+'"]').addClass('active');
         }
         else{
