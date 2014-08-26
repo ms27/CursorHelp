@@ -28,7 +28,8 @@ $(document).ready(function(){
  });
  $('[data-href]').click(function(){
   var aScroll=$(this).attr('data-href');
-  $('body').fadeOut(500);
-  setTimeout('location.replace("'+aScroll+'")', 500);
+  $('body').animate({opacity:0}, 1000);
+  $('html').animate({background:'#000'}, 1000);
+  setTimeout('location.replace("'+aScroll+'")', 1000);
  });
 });
