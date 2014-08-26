@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $($.browser.webkit){
+  if($.browser.webkit){
     
     
   }
