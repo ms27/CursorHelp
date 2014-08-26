@@ -36,7 +36,7 @@ $(document).ready(function(){
   aScrollType=$(this).attr('target');
   if(aScrollType!=='_blank'){
    $('body').animate({opacity:0}, 1000);
-   setTimeout('location.replace("'+aScroll+'")', 1000);
+   setTimeout('location.href="'+aScroll+'"', 1000);
   }
   else{
    window.open(aScroll);
