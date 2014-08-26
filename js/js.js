@@ -29,7 +29,6 @@ $(document).ready(function(){
  $('[data-href]').click(function(){
   var aScroll=$(this).attr('data-href');
   $('body').animate({opacity:0}, 1000);
-  $('html').animate({background:'#000'}, 1000);
   setTimeout('location.replace("'+aScroll+'")', 1000);
  });
 });
