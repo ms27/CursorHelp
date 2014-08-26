@@ -7,7 +7,7 @@ $(document).ready(function(){
          $(this).addClass('active');
         }
         else{
-         &(this).removeClass('active');
+         $(this).removeClass('active');
         }
       });
  });
