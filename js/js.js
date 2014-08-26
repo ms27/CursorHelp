@@ -4,7 +4,7 @@ $(document).ready(function(){
   wHeight=$(this).height();
   $('.content article').each(function(){
    var aPos=$(this).offset().top;
-        if(wTop+$('header').height()+wHeight()/2>aPos){
+        if(wTop+$('header').height()+wHeight/2>aPos){
          $(this).addClass('active');
         }
         else{
