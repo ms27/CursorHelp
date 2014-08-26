@@ -19,7 +19,7 @@ $(document).ready(function(){
         else{
          $('[data-active="'+aLink+'"]').removeClass('active1');
         }
-      });
+  });
  });
  $('[data-active]').click(function(){
   var aScroll=$(this).attr('data-active'),
