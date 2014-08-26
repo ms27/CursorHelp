@@ -4,7 +4,7 @@ $(document).ready(function(){
   $('.content article').each(function(){
    var aPos=$(this).offset().top;
         if(wTop>aPos){
-          $(this).addClass('active');
+          $(this).toggleClass('active');
         }
       });
  });
