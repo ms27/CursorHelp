@@ -111,14 +111,14 @@ display:none;
 header a{
 padding:10px 10px;
 }
-header a:hover{
+header li:hover a{
 background-color:rgba(255,255,255,.05);
 }
-header a:active{
+header li:hover a{
 background-color:rgba(255,255,255,.2);
 }
 header a.active{
-background-color:rgba(255,55,55,.05);
+background-color:rgba(255,55,55,.2);
 }
 .CHdisplay{
 display:none;
