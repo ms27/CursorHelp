@@ -4,7 +4,10 @@ $(document).ready(function(){
   $('.content article').each(function(){
    var aPos=$(this).offset().top;
         if(wTop>aPos){
-          $(this).toggleClass('active');
+         $(this).addClass('active');
+        }
+        else{
+         &(this).removeClass('active');
         }
       });
  });
