@@ -20,4 +20,9 @@ $(document).ready(function(){
         }
       });
  });
+ $('[data-active]').click(function(){
+  var aScroll=$(this).attr('data-active'),
+  aScrollPos=$('#'+aScroll).offset().top;
+  $('html, body').animate({scrollTop: aScrollPos}, 300);
+ });
 });
