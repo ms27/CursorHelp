@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $('.content article').each(function(){
-   var this=$(this),
+   var thisA=$(this),
     articlePos=this.offset.top;
       $(window).scroll(function(){
         var wTop=$(this).scrollTop();
