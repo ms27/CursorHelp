@@ -3,7 +3,7 @@ $(document).ready(function(){
   var wTop=$(this).scrollTop();
   $('.content article').each(function(){
    var aPos=$(this).offset().top;
-        if(wTop>articlePos){
+        if(wTop>aPos){
           $(this).addClass('active');
         }
       });
