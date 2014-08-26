@@ -26,4 +26,9 @@ $(document).ready(function(){
   aScrollPos=$('#'+aScroll).offset().top;
   $('html, body').animate({scrollTop: aScrollPos-headerH}, 500);
  });
+ $('[data-href]').click(function(){
+  var aScroll=$(this).attr('data-href');
+  $('body').fadeOut(500);
+  setTimeout('location.replace("'+aScroll+'")', 500);
+ });
 });
