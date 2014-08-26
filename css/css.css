@@ -117,11 +117,11 @@ background-color:rgba(255,255,255,.05);
 header li:hover a{
 background-color:rgba(255,255,255,.2);
 }
-header li a.active{
-background-color:rgba(255,55,55,.2);
-}
-header li a.active1{
+header a.activ1{
 background-color:rgba(255,55,55,.1);
+}
+header a.active{
+background-color:rgba(255,55,55,.2);
 }
 .CHdisplay{
 display:none;
