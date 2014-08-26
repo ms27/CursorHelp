@@ -1,5 +1,5 @@
 /*
-* CursorHelp v1.0 (21.9.14)
+* CursorHelp v1.0 (21.8.14)
 * http://ms27.github.io/CursorHelp/
 * Copyright 2014, Magomedov Said.
 */
@@ -117,8 +117,11 @@ background-color:rgba(255,255,255,.05);
 header li:hover a{
 background-color:rgba(255,255,255,.2);
 }
-header a.active{
+header li a.active{
 background-color:rgba(255,55,55,.2);
+}
+header li a.active1{
+background-color:rgba(255,55,55,.1);
 }
 .CHdisplay{
 display:none;
