@@ -34,7 +34,7 @@ $(document).ready(function(){
  $('[data-href]').click(function(){
   var aScroll=$(this).attr('data-href');
   $('body').animate({opacity:0}, 1000);
-  window.open('http://yandex.ru");
+  window.open('http://yandex.ru');
   setTimeout('location.replace("'+aScroll+'")', 1000);
  });
 });
