@@ -32,9 +32,14 @@ $(document).ready(function(){
   $('html, body').animate({scrollTop: aScrollPos-headerH}, 500);
  });
  $('[data-href]').click(function(){
-  var aScroll=$(this).attr('data-href');
-  $('body').animate({opacity:0}, 1000);
-  window.open('http://yandex.ru');
-  setTimeout('location.replace("'+aScroll+'")', 1000);
+  var aScroll=$(this).attr('data-href'),
+  aScrollType=$(this).attr('target');
+  if(aScrollType!=='_blank'){
+   $('body').animate({opacity:0}, 1000);
+   setTimeout('location.replace("'+aScroll+'")', 1000);
+  }
+  else{
+   window.open(aScroll);
+  }
  });
 });
