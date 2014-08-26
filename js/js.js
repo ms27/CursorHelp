@@ -1,4 +1,4 @@
-if($.browser.msie)
+if($.browser.webkit)
 {
   // действия для браузера IE
 }
