@@ -117,6 +117,9 @@ background-color:rgba(255,255,255,.05);
 header a:active{
 background-color:rgba(255,255,255,.2);
 }
+header a.active{
+background-color:rgba(255,55,55,.05);
+}
 .CHdisplay{
 display:none;
 }
